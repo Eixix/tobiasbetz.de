@@ -1,0 +1,129 @@
+body {
+  background-color: #002233;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 100%;
+}
+
+.lighter {
+  background-color: #003a57;
+}
+
+.lighter-polygons {
+  background-image: url("../svg/low-poly-grid-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section > p {
+  font-size: 1rem;
+  padding: 0 1rem;
+  max-width: 80%;
+  text-align: justify;
+}
+
+section > ul > li {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+progress {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+progress[value] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+
+  max-width: 100%;
+  height: 1rem;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #1d7efb;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #1d7efb;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+.top-waves {
+  padding-top: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../svg/wave-haikei.svg");
+  background-position: top;
+}
+
+.bottom-waves {
+  padding-bottom: 500px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("../svg/layered-waves-haikei.svg");
+}
+
+.listing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 60%;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  max-width: 100%;
+}
+
+.skill > img {
+  max-width: 100%;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+.fa-code {
+  padding-right: 1rem;
+}
