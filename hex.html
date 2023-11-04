@@ -1,0 +1,185 @@
+<div class="container">
+    <div class="row">
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+    </div>
+    <div class="row">
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+    </div>
+    <div class="row">
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+    </div>
+    <div class="row">
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+    </div>
+    <div class="row">
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+    </div>
+    <div class="row">
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+    </div>
+    <div class="row">
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+    </div>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        background: white;
+    }
+
+    .container {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        animation: animate 4s linear infinite;
+    }
+
+    .hex {
+        position: relative;
+        width: 100px;
+        height: 110px;
+        background: linear-gradient(30deg, rgba(255, 255, 255, 1) 0%, rgb(219, 219, 219) 72%, rgba(238, 238, 238, 1) 100%);
+
+        margin: 1px;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        transition: 2s;
+    }
+
+    .hex:hover {
+        transition: 1s;
+        background: #0f0;
+    }
+
+    .hex:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        pointer-events: none;
+        background: rgba(255, 255, 255, 0.02);
+    }
+
+    .row {
+        display: inline-flex;
+        margin-top: -27px;
+        margin-left: -50px;
+    }
+
+    .row:nth-child(even) {
+        margin-left: 1px;
+    }
+</style>
